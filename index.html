@@ -9,7 +9,7 @@
 <link href="https : //fonts.googleapis.com/css2?family= famille= Roboto:ital,wght@0,400;0,500;1,700 & display=swap" rel="stylesheet" >
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="body__background">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light nav__background ">
             <div class="container-fluid">
@@ -54,25 +54,75 @@
     </header>
     <main>
         <div class="container">
-            <div class="row background__title">
-                <div class="col-12 ">
-                    <h1 class="text-center mt-5 title">Bienvenue au Zoo Arcadia</h1>
-                </div>
-                <div class="col-12">
-                    <p class="mt-5 fs-3 paragraphe__title">Arcadia est un zoo situé en France près de la forêt de Brocéliande, en Bretagne depuis 1960. Ils possèdent tout un panel d’animaux, réparti par habitat (savane, jungle, marais) et font extrêmement attention à leur santé. Chaque jour, plusieurs vétérinaires viennent afin d’effectuer les contrôles sur chaque animal avant l’ouverture du zoo afin de s’assurer que tout se passe bien. De même, toute la nourriture donnée est calculée afin d’avoir le bon grammage (le bon grammage est précisé dans le rapport du vétérinaire).</p>
+            <div class="row mt-5 background__title">
+                <div class="col-md-12 text-center">
+                    <h1 class="title">Bienvenue au Zoo Arcadia</h1>
+                    <p class="mt-4 fs-5 paragraphe__title">Arcadia est un zoo situé en France près de la forêt de Brocéliande, en Bretagne depuis 1960. Ils possèdent tout un panel d’animaux, réparti par habitat (savane, jungle, marais) et font extrêmement attention à leur santé. Chaque jour, plusieurs vétérinaires viennent afin d’effectuer les contrôles sur chaque animal avant l’ouverture du zoo afin de s’assurer que tout se passe bien. De même, toute la nourriture donnée est calculée afin d’avoir le bon grammage (le bon grammage est précisé dans le rapport du vétérinaire).</p>
                 </div>
             </div>
-            <div class="container">
-                <img src="assets/images/GUEPARD_ZLF.png" alt="guépard" class="img-fluid">
-                <img src="" alt="" class="img-fluid">
-                <img src="" alt="" class="img-fluid">
-                <img src="" alt="" class="img-fluid">
+            <!-- debut carroussel -->
+            <div class="row justify-content-center mt-5">
+                <div id="carousselImages" class="carousel slide w-50 mx-auto my-5 shadow " data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carroussel__polaroid-effect">
+                            <img src="assets/images/orang-outant.jpg" class="d-block w-100 img-fluid" alt="orang-outant">
+                        </div>
+                        <div class="carousel-item carroussel__polaroid-effect">
+                            <img src="assets/images/phoques.jpg" class="d-block w-100 img-fluid" alt="phoques">
+                        </div>
+                        <div class="carousel-item carroussel__polaroid-effect">
+                            <img src="assets/images/savane.jpg" class="d-block w-100 img-fluid" alt="savane">
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            <!-- fin du carroussel -->
+
+            <!-- debut des cards -->
+            <div class="container ">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/habitat-arctique.jpg" class="card-img-top" alt="arctique">
+                            <div class="card-body">
+                                <p class="card-text">la vie dans l'arctique</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card " style="width: 18rem;">
+                            <img src="./assets/images/habitat-desert.jpg" class="card-img-top" alt="desert">
+                            <div class="card-body">
+                                <p class="card-text">un désert plein de vie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card " style="width: 18rem;">
+                            <img src="./assets/images/habitat-ocean.jpg" class="card-img-top" alt="ocean">
+                            <div class="card-body">
+                                <p class="card-text">le monde du silence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card " style="width: 18rem;">
+                            <img src="./assets/images/habitat-savane.jpg" class="card-img-top" alt="savane">
+                            <div class="card-body">
+                                <p class="card-text">le monde des grands prédateurs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card " style="width: 18rem;">
+                            <img src="./assets/images/habitat-tropical.jpg" class="card-img-top" alt="foret tropical">
+                            <div class="card-body">
+                                <p class="card-text">un monde plein de couleurs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-            <section>
-                habitas
-            </section>
             <section>
                 services
             </section>

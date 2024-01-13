@@ -52,8 +52,10 @@ table {
 
 /* fin du reset */
 
+
+
 .nav__background{
-    background-image: url('/assets/images/Design_sans_titre__6_.png');
+    background-image: url('/assets/images/navBackground.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -73,14 +75,20 @@ table {
 }
 
 
-.background__title{
-    background-image: url('./images/istockphoto-486896521-1024x1024.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 50px;
-    min-height: 300px;
+.background__title {
+    background: linear-gradient(to top left, #a2e30d 30%, #087f25); 
+    padding: 20px;
+    color: #ffffff; 
+    border-radius: 10% 20% 10% 20%/30% 30% 30% 30%;
+    box-shadow: 0px 10px 20px rgba(0, 0.1, 0.2, 0.5); 
 }
+
+@media (max-width: 375px) {
+    .background__title {
+        background: linear-gradient(to top left, #a2e30d , #087f25);
+        border-radius: none;
+        box-shadow: none;}
+    }
 
 .title{
     font-size: 80px;
@@ -90,7 +98,22 @@ table {
 }
 
 .paragraphe__title{
-    font-weight: 300;
+    max-width: 600px;
+    margin:auto;
     color:white;
+}
+
+.carroussel__polaroid-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.carroussel__polaroid-effect img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 10px solid #fff; 
+    border-bottom: 30px solid #fff; 
+    border-radius: 10px; 
 }
 
