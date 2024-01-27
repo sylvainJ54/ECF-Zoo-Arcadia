@@ -31,21 +31,10 @@
                             <a class="nav-link  fs-3" href="#">Contact</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Ajout de la section de connexion -->
                         <li class="nav-item">
-                            <form class="row g-3 w-100">
-                                <div class="col-12 col-md-6 mb-3 mb-md-0">
-                                    <label for="username" class="form-label ">Identifiant</label>
-                                    <input type="eusername" class="form-control" id="username" aria-describedby="username">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="password" class="form-label">Mot de passe</label>
-                                    <input type="password" class="form-control" id="password">
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn  btn-lg">Connexion</button>
-                                </div>
-                            </form>
+                            <a class="nav-link" href="#" id="connexionBtn" data-bs-toggle="modal" data-bs-target="#connexionModal">Connexion</a>
                         </li>
                     </ul>
                 </div>
@@ -212,6 +201,31 @@
                         <button type="submit" class="btn btn-primary mt-3">Soumettre l'avis</button>
                     </form>
                 </div>
+                <!-- modale de connexion -->
+                
+                <div class="modal fade" id="connexionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form id="loginForm">
+                            <div class="mb-3">
+                              <label for="username" class="form-label ">Identifiant</label>
+                              <input type="eusername" class="form-control" id="username" aria-describedby="username">
+                            </div>
+                            <div class="mb-3">
+                              <label for="password" class="form-label">Mot de passe</label>
+                              <input type="password" class="form-control" id="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Se connecter</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
     </main>
     <footer>
