@@ -1,4 +1,4 @@
- // modification des services si administrateur
+  // modification des services si administrateur
 const isAdmin = false; // Remplacez ceci par la logique réelle d'authentification
 
 document.addEventListener('DOMContentLoaded', function () {
