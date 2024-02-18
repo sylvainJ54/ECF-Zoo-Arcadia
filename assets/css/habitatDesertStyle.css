@@ -33,6 +33,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle at top left,
+    #f3ff15 15%,
+    #e9aa44 30%,
+    #e5dab7 60%);
 }
 ol, ul {
 	list-style: none;
@@ -57,10 +61,12 @@ a{
 /* fin du reset */
 
 
-.background__title {
-    background: linear-gradient(to top left, #a2e30d 30%, #087f25); 
+.background__habitat-title {
+    background: radial-gradient(circle at top left,
+    #f3ff15 15%,
+    #e9aa44 30%,
+    #e5dab7 60%);
     padding: 20px;
-    color: #ffffff; 
     border-radius: 15px;
     box-shadow: 0px 10px 20px rgba(0, 0.1, 0.2, 0.5); 
     margin-left: auto;
@@ -70,14 +76,14 @@ a{
 .title{
     font-size: 80px;
     font-weight: 500;
-    color:white;
+    color:#f12828;
 
 }
 
 .habitat__title {
     font-size: 80px;
     font-weight: 500;
-    color:rgb(26, 137, 185);
+    color:#f12828;
 }
 
 .habitat__image {
@@ -89,5 +95,43 @@ a{
 
 .habitat__paragraph {
     font-size: 25px;
-    color:rgb(26, 137, 185);
+    color:#f12828;
+}
+
+
+
+.card {
+    width: 250px;
+    height: 400px;
+    
+}
+
+.card-body {
+    margin-top: 20px;
+}
+
+.card-img-top{
+    max-height: 150px;
+    max-width: auto
+    ;
+}
+
+.card-title {
+    color:#f12828;
+}
+
+.btn {
+    color:#f10d0d;
+    background: radial-gradient(circle at top left,
+    #f3ff15 25%,
+    #e9aa44 30%,
+    #e5dab7 60%);
+    &:hover {
+        color:white;
+        background: radial-gradient(circle at top left,
+    #333333 25%, /* Nuit profonde */
+    #484848 30%, /* Nuit légèrement plus claire */
+    #5d5d5d 60%, /* Sable foncé */
+    #e5dab7 100%);
+    }
 }
