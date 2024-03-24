@@ -1,9 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2024-03-24T08:06:31.599Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.1.0" etag="e6nZkZsqz_LFw4lZXvo_" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-24T08:33:19.477Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="LRdEPlw0NEURvau3TlS4" version="24.1.0" type="github">
   <diagram name="Page-1" id="yVfCKmrF4dH6FuBZHNhV">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="VTD4j869CvAGOaZoyUGc-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-1" target="VTD4j869CvAGOaZoyUGc-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="296.75675675675666" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-1" value="visiteur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;direction=east;" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-13" value="consulter les informations sur les animaux" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-21" value="visualiser les services et les horaires" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-28" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-22" target="VTD4j869CvAGOaZoyUGc-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-36" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-22" target="VTD4j869CvAGOaZoyUGc-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-39" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-22" target="VTD4j869CvAGOaZoyUGc-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-22" target="VTD4j869CvAGOaZoyUGc-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-22" value="employés" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="585" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-23" value="lire les avis des autres visiteurs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-25" value="laisser un avis" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.008;entryY=0.617;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-1" target="VTD4j869CvAGOaZoyUGc-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.008;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VTD4j869CvAGOaZoyUGc-22" target="VTD4j869CvAGOaZoyUGc-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="670" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-29" value="gérer les services du zoo (ajouter,modifier,supprimer)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="555" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-34" value="gérer les animaux (ajouter, modifier, supprimer)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VTD4j869CvAGOaZoyUGc-41" value="&lt;ul style=&quot;margin: 4px 0px; padding-inline-start: 1.125rem; color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot; data-sourcepos=&quot;14:1-18:0&quot;&gt;&lt;li style=&quot;margin-bottom: 0px;&quot; data-sourcepos=&quot;16:1-16:60&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Saisir les données relatives à l&#39;alimentation des animaux.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="760" width="220" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
