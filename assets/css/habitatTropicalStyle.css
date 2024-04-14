@@ -92,7 +92,7 @@ a{
 .habitat__title{
 	font-size: 1.5em;
 	font-weight: 700;
-	color: #808000;
+	color: #008000;
 	margin-top: 100px;
 }
 
@@ -105,7 +105,7 @@ a{
 
 .habitat__paragraph {
     font-size: 25px;
-    color:#808000;
+    color:#008000;
 	margin-top: 100px;
 }
 
@@ -194,14 +194,14 @@ a{
 .habitat__card-title {
 	font-weight: 500;
 	font-size: 30px;
-	color: #808000;
+	color: #008000;
 	font-weight: 700;
 	margin-top: 25px;
 	margin-bottom: 20px;
 }
 
 .habitat__card-text {
-	color: #808000;
+	color: #008000;
 	font-size: 1.5rem;
 }
 

@@ -55,19 +55,20 @@ a {
 }
 
 /* fin du reset */
-
+.navbar-toggler{
+    background-color: white;
+}
 
 
 .nav__background{
-    background-image: url('/assets/images/navBackground.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: #082B3A;
+    height: 150px;
+    width: 100%;
 
 }
 
 .nav-link{
-    color:#3308f2;
+    color:white;
 }
 
 .btn{
