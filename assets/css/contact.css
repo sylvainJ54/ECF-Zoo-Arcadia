@@ -57,94 +57,68 @@ a {
 
 /* fin du reset */
 
+
+
+.background__contact-nav {
+    background: #082B3A;
+    height: 350px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .background__contact-nav {
+        height: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    .background__contact-nav {
+        height: 200px;
+    }
+}
+
 .logo {
     height: 150px;
     width: auto;
 }
 
-@media screen and (max-width: 768px){
-    .logo{
+@media (max-width: 768px) {
+    .logo {
         height: 100px;
     }
 }
 
-.navbar-toggler{
-    background-color: white;
-}
-
-
-.nav__background{
-    background: #082B3A;
-    height: 150px;
-    width: 100%;
-
-}
-
-.nav-link{
+.title{
+    font-weight: 700;
     color:white;
+    width: 50px;
+    margin-right: 100px;
 }
 
-.navbar-collapse{
-    transition: all 0.1s;
+@media  (min-width: 768px) {
+	.title {
+		text-align: center;
+	}
+	
 }
 
-.navbar-collapse.show {
-    background-color: #082B3A; /* Couleur de fond du menu déroulant */
+.contact__img {
+    width: 300px;
+    height: 300px;
 }
-
-.btn{
-    background-color: #3308f2;
-    color:white;
-        &:hover{
-            background-color: #08f24a;
+@media (max-width: 768px) {
+    .contact__img {
+        width: 150px;
+        height: 150px;
     }
 }
 
-.welcome-image{
-    width: 325px;
-    height: auto;
-}
-
-.paragraphe__title{
-    max-width: 600px;
-    margin:auto;
-}
-
-.carroussel__polaroid-effect {
-    position: relative;
-    overflow: hidden;
-}
-
-.carroussel__polaroid-effect img {
-    width: 100%;
-    max-height: 400px;
-    display: block;
-    border: 10px solid #fff; 
-    border-bottom: 30px solid #fff; 
-    border-radius: 20px; 
-}
-
-.card{
-    width: 18rem;
-}
-
-.card-img-top {
-    border-radius: 50%;
-}
-
-.welcome-image{
-    width: 40%;
-    height: auto;
-    border-radius: 20px;
-}
-
-@media screen and (max-width: 768px){
-    .welcome-image{
-        width: 100%;
+@media (max-width: 320px) {
+    .contact__img {
+        width: 100px;
+        height: 100px;
     }
 }
-
-
 
 
 .form-pseudo{
@@ -177,7 +151,7 @@ a {
 
 @media (max-width: 320px) {
     .form-submit {
-        width: 50%;
+        width: 30%;
     }
 }
 
@@ -185,11 +159,4 @@ a {
     .form-submit {
         width: 50%;
     }
-}
-
-.footer__background{
-    width: 100%;
-    height: auto;
-    background-color: #082B3A;
-    color: white;
 }

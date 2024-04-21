@@ -9,65 +9,54 @@
 <link href="https : //fonts.googleapis.com/css2?family= famille= Roboto:ital,wght@0,400;0,500;1,700 & display=swap" rel="stylesheet" >
     <link rel="stylesheet" href="assets/css/indexStyle.css">
 </head>
-<body class="body__background">
+<body >
     <header>
         <nav class="navbar navbar-expand-lg navbar-light nav__background ">
             <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-brand ">
+                    <img src="./assets/images/logo.jpg" alt="logo" class="logo ">
+                </div>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link fs-3" href="#home">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-3" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-3" href="#habitats">Habitats</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-3" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Ajout de la section de connexion -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="connexionBtn" data-bs-toggle="modal" data-bs-target="#connexionModal">Connexion</a>
-                        </li>
-                    </ul>
-                </div>
+                    <!-- menu -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-lg-row flex-column align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link  fs-3" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  fs-3" href="#habitats">Habitats</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  fs-3" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto flex-column align-items-center ">
+                            <!-- Add connexion -->
+                            <li class="nav-item">
+                                <a class="nav-link fs-3"" href="#" id="connexionBtn" data-bs-toggle="modal" data-bs-target="#connexionModal">Connexion</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
     </header>
     <main>
+        <div class ="container-fluid px-0">
+            <div class="row">
+                <div class="text-center mt-3 px-0">
+                    <img src="./assets/images/welcome.jpg" alt="image de bienvenue" class="welcome-image">
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <div class="row mt-5 background__title">
+            <div class="row mt-5 ">
                 <div class="col-sm-6 col-md-12 text-center">
-                    <h1 class="title">Bienvenue au Zoo Arcadia</h1>
                     <p class="mt-4 fs-5 paragraphe__title">Arcadia est un zoo situé en France près de la forêt de Brocéliande, en Bretagne depuis 1960. Ils possèdent tout un panel d’animaux, réparti par habitat (savane, jungle, marais) et font extrêmement attention à leur santé. Chaque jour, plusieurs vétérinaires viennent afin d’effectuer les contrôles sur chaque animal avant l’ouverture du zoo afin de s’assurer que tout se passe bien. De même, toute la nourriture donnée est calculée afin d’avoir le bon grammage (le bon grammage est précisé dans le rapport du vétérinaire).</p>
                 </div>
             </div>
-            <!-- debut carroussel -->
-            <div class="row justify-content-center mt-5">
-                <div id="carousselImages" class="carousel slide col-sm-8 col-md-6 mx-auto my-5 shadow" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active carroussel__polaroid-effect">
-                            <img src="assets/images/orang-outant.jpg" class="d-block w-100 img-fluid" alt="orang-outant">
-                        </div>
-                        <div class="carousel-item carroussel__polaroid-effect">
-                            <img src="assets/images/phoques.jpg" class="d-block w-100 img-fluid" alt="phoques">
-                        </div>
-                        <div class="carousel-item carroussel__polaroid-effect">
-                            <img src="assets/images/savane.jpg" class="d-block w-100 img-fluid" alt="savane">
-                        </div>
-                    </div>
-                </div>
-            </div>       
-            <!-- fin du carroussel -->
-
-            <!-- debut des cards -->
+            <!-- start cards -->
             <div class="container-fluid " id="habitats">
                     <div class="row  justify-content-center mt-5">
                         <div class="col-sm-6 col-md-6 col-lg-4 mb-4 ">
@@ -122,60 +111,68 @@
                     </a>
                     </div>
             </div>
-            <!-- fin des cards -->
-            <!-- Début de la partie services -->
+            <!-- end cards -->
+            <!-- start services -->
             <div class="container mt-5 mb-5" id="services">
-                <h1 class="mb-4 text-center fs-1">Liste des Services</h1>
+                <h1 class="mb-4 text-center fs-1 service-text">Dans notre parc</h1>
                 <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#ajoutServiceModal" id="ajouterServiceBtn" style="display: none;">
                     Ajouter un Service
                 </button>
-                <!-- Tableau pour Afficher les Services -->
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Nom</th>
-                            <th>Description</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Restauration</td>
-                            <td>Service de restauration avec diverses options alimentaires.</td>
+                <!-- Array Services -->
+                <table class="table mt-5">
+                    <tbody class="mt-5">
+                        <tr class="mt-5">
                             <td>
-                                <!-- Bouton pour Modifier le Service (accessible seulement pour l'administrateur) -->
+                                <img src="data:image/png;base64,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">
+                            </td>
+                            <td class="service-text">
+                                Restauration
+                            </td>
+                            <td class="service-text "> Service de restauration avec diverses options alimentaires.</td>
+                            <td>
+                                <!-- button Service (admin only) -->
                                 <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modificationServiceModal" id="modifierServiceBtn1">
                                     Modifier
                                 </button>
-                                <!-- Bouton pour Supprimer le Service (accessible seulement pour l'administrateur) -->
+                                <!-- Button to Remove Service(admin only) -->
                                 <button type="button" class="btn btn-danger btn-sm" onclick="supprimerService()" id="supprimerServiceBtn1">
                                     Supprimer
                                 </button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Visite des Habitats avec un guide (gratuit)</td>
-                            <td>Venez profiter de l'expérience de nos guides pour en apprendre plus sur vos animaux préférés</td>
                             <td>
-                                <!-- Bouton pour Modifier le Service (accessible seulement pour l'administrateur) -->
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB9UlEQVR4nO3Wz6tMcRjH8RduCCldSkLpLu5SoqQkbCg7Gws73fwJ7uIu78a/YGEjxYaVDaGukV8LbKyUkPxKSpS48tWp52oac82ZMWfmTL7veuo05/t9ns/nfJ/zzCFTiq24ietxPZLsx1ukiA84ZIRYghn8CANXIlL8NhNras1aXArRP3EaS0P4dIu5dWrKdjxtaqPDbdYcwLtY8wK71Izj+BICH2LbX9Zuwb1Y+xUnmu6lRaJyxqJ9Fgqew6oS+1bgTNO+4nr5sIxsxp2mJzvVQ46p2FvkuNtGeOVG9uFNFHmJ3f+QaweeLXICqSojxfQ5hfkocBXjfcg7HrlSxHTUqsRI62idxbI+5i9yzUbuosblKoxM4kkk/YSjquMIPlbxsh/D50j4GBOqZyJqLRgpNPRttJ7HaoNjJc62GdFdsQE3IsF8vHzD4iS+hZYGNpXduBevY+Mr7DF8duJ5aHqPg2Xcf48Nc9ioPqzHtZYu+eMreg0utkyK4h2pG2MtGi+E9t88aBqtA/tQ65HUovV+883beBT/F6NiZDI0NzotrCuprL5sZECkfCL/24mkHqPXOh3JRnT3hGt/ImXJRuQTKUdurS5JubVKklurS1JurZLk1uqSlFurJLm1uiTl1hr11ko1j440aiAydYhbnW1kMvrBL/A6qXQvVsG5AAAAAElFTkSuQmCC">
+                            </td>
+                            <td class="service-text ">
+                                Visite des Habitats avec un guide (gratuit)
+                            </td>
+                            <td class="service-text">Venez profiter de l'expérience de nos guides pour en apprendre plus sur vos animaux préférés</td>
+                            <td >
+                                <!-- Button for modify Service (admin only) -->
                                 <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modificationServiceModal" id="modifierServiceBtn2">
                                     Modifier
                                 </button>
-                                <!-- Bouton pour Supprimer le Service (accessible seulement pour l'administrateur) -->
+                                <!-- Button to Remove Service(admin only) -->
                                 <button type="button" class="btn btn-danger btn-sm" onclick="supprimerService()" id="supprimerServiceBtn2">
                                     Supprimer
                                 </button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Visite du Zoo en petit train</td>
-                            <td>Profitez d'un moment pour faire le tour de notre zoo en petit train</td>
                             <td>
-                                <!-- Bouton pour Modifier le Service (accessible seulement pour l'administrateur) -->
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeklEQVR4nO2aO2uUQRSGH5SASvIDNG4diNHGzsb8AgO6NmIfDUhSiKVsZazFRiujsYgEAopt/A9JoaYzIKZQyU0x8bIycALLMPv5XWa+mS+eB04VOO97zs5lZ3NAURRFUUIzDrwBvgHdf8QusAxc5JDQyVF0v7hLw7leofiDuEZDOQase2jAR+AEiTIAtIF54K3s336FvARO5cg5DLzKyLMjWvOibTxEYQJYK/BJmsLycrpA3jXxUhtHgNkSS7koRXL/Ae6Jt+DMltzLRSmjYZoQlAnpdq/oPvAIOA8cD21ANIzWY9G2V8KlUMIDjj3/CThLPM4BG44zIcjB2LaE9oBR4jMmXnq9Ga/eeW6JPCAdHlrenoUQee/hS01d8S5EA3YSKCxvGK/e6TYstAG+6YbucEVqXwGpoQ1AVwC6BdAzAD0E0VsAvQZp4j1bEf0qjL4F0McQ+hpEr0H0GiT5a7AFLALbEkvASEL+ggqY4r848n2Vvx36Bixm/I73IgF/wQW2MxqwlXIDvlsCQwEasFky55CVx8wieWfdEin7b7GljAYslMx5xsrzgQC8tkSmS+YZkQPPLv6zDEaUYcbKZSZMvHPHElmpMJDQkgNvS2KhQvFHgVXL220CMAz8soRuEJ8py9NP4GQosaeW2A8ZgozFuHjo9fQkpGBLlqzdhJt1zef0LPspR/GbFbZSbtqOMZmDM2FaTuRB/DMouWcce74rni5TE5PA74zrrO4wxd+iZq7KkotdvPFwhUi0gLk+W6KOT32u4gMqyDT4vmNoyUfsOcbijHZSxe8GvhYvON4S9/lPik+qCZ1IxSfRhE7k4pNaCYqiKAoN5i/vncguhs4AuwAAAABJRU5ErkJggg==">
+                            </td>
+                            <td class="service-text"> 
+                                Visite du Zoo en petit train
+                            </td>
+                            <td class="service-text">Profitez d'un moment pour faire le tour de notre zoo en petit train</td>
+                            <td>
+                                <!--Button for modify Service (admin only) -->
                                 <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modificationServiceModal" id="modifierServiceBtn3">
                                     Modifier
                                 </button>
-                                <!-- Bouton pour Supprimer le Service (accessible seulement pour l'administrateur) -->
+                                <!-- Button to Remove Service(admin only) -->
                                 <button type="button" class="btn btn-danger btn-sm" onclick="supprimerService()" id="supprimerServiceBtn3">
                                     Supprimer
                                 </button>
@@ -184,31 +181,31 @@
                     </tbody>
                 </table>
                 
-                <!-- Modal pour Ajouter un Nouveau Service -->
+                <!-- Modal to Add a New Service -->
                 <div class="modal fade" id="ajoutServiceModal" tabindex="-1" role="dialog" aria-labelledby="ajoutServiceModalLabel" aria-hidden="true">
                     service crée
                 </div>
                 
-                <!-- Modal pour Modifier un Service Existante -->
+                <!-- Modal to Modify an Existing Service -->
                 <div class="modal fade" id="modificationServiceModal" tabindex="-1" role="dialog" aria-labelledby="modificationServiceModalLabel" aria-hidden="true">
                     Vous allez supprimer un service
                 </div>
 
-                <!-- les avis -->
+                <!-- opinions -->
                 <div class="container mt-5">
                     <h1 class="mb-4 text-center fs-1">Livre d'or</h1>
             
-                    <!-- Formulaire de soumission d'avis -->
+                    <!-- Review submission form -->
                     <form action="traitement_commentaire.php" method="post">
-                        <div class="form-group mt-4">
+                        <div class="form-group mt-5">
                             <label for="pseudo ">Pseudo :</label>
-                            <input type="text" class="form-control mt-3" name="pseudo" required>
+                            <input type="text" class="form-control mt-3 form-pseudo" name="pseudo" required>
                         </div>
-                        <div class="form-group mt-4 ">
+                        <div class="form-group mt-5 ">
                             <label for="avis">Avis :</label>
-                            <textarea class="form-control mt-3" name="avis" rows="4" required></textarea>
+                            <textarea class="form-control mt-3 form-text " name="avis" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3">Soumettre l'avis</button>
+                        <button type="submit" class="btn btn-primary mt-3 form-submit">Soumettre l'avis</button>
                     </form>
                 </div>
                 <!-- modale de connexion -->
@@ -238,9 +235,28 @@
                 </div>
 
     </main>
-    <footer>
-        contacts horaires
-    </footer>
+        <footer class="footer__background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mt-4">
+                        <h3 class="fs-2">Nous trouver</h3>
+                        <p class="mt-3">17,route du bonheur</p>
+                        <p class="mt-2">54000 NANCY</p>
+                        <p class="mt-2">Telephone : 03.83.37.54.17</p>
+                        <p class="mt-2 mb-5">Email: contact@gmial.com</p>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <h3 class="fs-2">Horaires</h3>
+                        <p class="mt-3">Ouvert toute l'année></p>
+                        <p class="mt-2"> 7J/7 àpartir de 9h00 </p>
+                        <p class="mt-2"> y compris les jours fériés </p>
+                    </div>
+                    <div class="col-md-4 mt-4 mb-5" id="contact">
+                        <a class="fs-2 nav-link" href="./assets/html/contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="assets/script/script.js"></script>
