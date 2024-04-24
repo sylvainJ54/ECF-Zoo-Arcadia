@@ -1,51 +1,33 @@
 <?php
+// Inclusion du fichier de connexion à la base de données
+require_once 'db_connection.php';
 
-require_once 'db_connect.php';
-
-$conn = connectToDatabase(); // Établir la connexion
-
-// Assuming you have a form with 'username' and 'password' fields
-if (isset($_POST['username']) && isset($_POST['password'])) {
+// Vérification de la méthode de requête
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Récupération des données du formulaire
     $username = $_POST['username'];
     $password = $_POST['password'];
-
-    // Connect to the database
-    $conn = db_connect();
-
-    // Prepare the SQL statement
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
-
-    // Bind the username parameter
-    $stmt->bind_param("s", $username);
-
-    // Execute the query
+    
+    // Requête préparée pour vérifier les identifiants de l'utilisateur
+    $sql = "SELECT * FROM utilisateur WHERE username=? AND password=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('ss', $username, $password);
     $stmt->execute();
-
-    // Get the result
     $result = $stmt->get_result();
-
-    // Check if the user exists
+    
     if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $storedPassword = $row['password'];
-
-        // Verify the password
-        if (password_verify($password, $storedPassword)) {
-            // Password is correct, login successful
-            // Redirect to the desired page
-            header("Location: /path/to/desired/page.php");
-            exit();
-        } else {
-            // Password is incorrect
-            echo "Invalid password";
-        }
+        // Utilisateur trouvé, retourner un message de succès
+        echo "Login réussi";
     } else {
-        // User does not exist
-        echo "User not found";
+        // Aucun utilisateur trouvé, retourner un message d'erreur
+        echo "Identifiants incorrects";
     }
+} else {
+    // Si la méthode de requête n'est pas POST, retourner un message d'erreur
+    echo "Méthode de requête non autorisée";
+}
 
-    // Close the statement and the connection
-    $stmt->close();
-    $conn->close();
-};
+// Fermeture de la connexion à la base de données
+$stmt->close();
+$conn->close();
 ?>
