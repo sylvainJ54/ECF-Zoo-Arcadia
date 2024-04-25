@@ -1,8 +1,8 @@
 <?php
-require_once '../config/config.php';
+require_once '../assets/config/config.php';
 
 // Création de la connexion
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 // Vérification de la connexion
 if ($conn->connect_error) {

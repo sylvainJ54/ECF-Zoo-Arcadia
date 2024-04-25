@@ -1,33 +1,22 @@
 <?php
-// Inclusion du fichier de connexion à la base de données
-require_once 'db_connection.php';
+include '../assets/config/config.php';
 
-// Vérification de la méthode de requête
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Récupération des données du formulaire
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    
-    // Requête préparée pour vérifier les identifiants de l'utilisateur
-    $sql = "SELECT * FROM utilisateur WHERE username=? AND password=?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param('ss', $username, $password);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    
-    if ($result->num_rows > 0) {
-        // Utilisateur trouvé, retourner un message de succès
-        echo "Login réussi";
-    } else {
-        // Aucun utilisateur trouvé, retourner un message d'erreur
-        echo "Identifiants incorrects";
-    }
+// Récupération des données du formulaire
+$username = $_GET['username'];
+$password = $_GET['password'];
+
+// Requête pour vérifier les identifiants
+$sql = "SELECT users.username, users.name, users.firstname, roles.label AS role 
+        FROM users 
+        INNER JOIN roles ON users.role_id = roles.role_id 
+        WHERE username = '$username' AND password = '$password'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Utilisateur trouvé, retourne les informations de l'utilisateur
+    $row = $result->fetch_assoc();
+    echo json_encode(['success' => true, 'user' => $row]);
 } else {
-    // Si la méthode de requête n'est pas POST, retourner un message d'erreur
-    echo "Méthode de requête non autorisée";
+    // Identifiants invalides
+    echo json_encode(['success' => false, 'message' => 'Identifiants invalides']);
 }
-
-// Fermeture de la connexion à la base de données
-$stmt->close();
-$conn->close();
-?>

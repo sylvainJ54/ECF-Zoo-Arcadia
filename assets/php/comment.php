@@ -1,6 +1,6 @@
 <?php
 // Inclure le fichier de connexion à la base de données
-include 'connexion.php';
+include '../assets/php/db_connect.php';
 
 // Vérification si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
