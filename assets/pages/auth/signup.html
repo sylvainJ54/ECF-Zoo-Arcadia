@@ -19,22 +19,40 @@
         <div class="mb-3 mt-5">
             <label for="NameInput" class="form-label">Nom</label>
             <input type="text" class="form-control form-pseudo" id="NameInput" placeholder="Votre nom"> 
+            <div class="invalid-feedback">
+                Nom requis
+            </div>
         </div>
         <div class="mb-3 mt-5">
             <label for="FirstNameInput" class="form-label">Prénom</label>
-            <input type="text" class="form-control form-pseudo" id="FirstNameInput" placeholder="Votre prénom"> 
+            <input type="text" class="form-control form-pseudo" id="FirstNameInput" placeholder="Votre prénom">
+            <div class="invalid-feedback">
+                Prénom requis
+            </div> 
         </div>
         <div class="mb-3 mt-5">
             <label for="EmailInput" class="form-label">Email</label>
-            <input type="email" class="form-control form-pseudo" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
+            <input type="email" class="form-control form-pseudo" id="EmailInput" placeholder="john@mail.fr" name="Email"> 
+            <div class="invalid-feedback">
+                Le mail n'est pas valide
+            </div>
         </div>
         <div class="mb-3 mt-5">
             <label for="PasswordInput" class="form-label">Mot de passe</label>
             <input type="password" class="form-control form-pseudo" id="PasswordInput" >
+            <div class="invalid-feedback">
+                Le mot de passe n'est pas assez fort: au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial
+            </div>
+            <div class="valid-feedback">
+                Mot de passe valide
+            </div>
         </div>
         <div class="mb-3 mt-5">
-            <label for="ValidatePasswaordInput" class="form-label">Validez votre mot de passe</label>
-            <input type="password" class="form-control form-pseudo" id="ValidatePasswaordInput" >
+            <label for="ValidatePasswaordInput" class="form-label">Confirmez votre mot de passe</label>
+            <input type="password" class="form-control form-pseudo" id="ValidatePasswordInput" >
+            <div class="invalid-feedback">
+                Le mot de passe n'est pas identique
+            </div>
         </div>
         <div class="form-check mt-4 fs-5">
             <input class="form-check-input" type="checkbox" value="" id="EmployesChecked">
@@ -49,7 +67,7 @@
             </label>
         </div>
         <div class="mt-5 mb-5 text-center">
-            <button type="submit" class="btn  form-submit ">Inscription</button>
+            <button type="submit" class="btn  form-submit " id="btnRegister">Inscription</button>
         </div>
     </form>
 </div>
