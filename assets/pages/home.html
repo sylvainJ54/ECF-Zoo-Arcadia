@@ -68,46 +68,49 @@
         </div>
         <!-- end cards -->
         <!-- start services -->
-        <div class="container mt-5 mb-5" id="services">
+        <div class="container mt-5 mb-5" >
             <h1 class="mb-4 text-center fs-1 service-text">Dans notre parc</h1>
             <!-- Array Services -->
-            <table class="table mt-5">
+            <table class="table mt-5" id="services">
                 <tbody class="mt-5">
-                    <tr class="mt-5">
+                    <tr class="mt-5" data-service-id="service-1">
                         <td>
                             <img src="data:image/png;base64,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">
                         </td>
                         <td class="service-text">
                             Restauration
                         </td>
-                        <td class="service-text "> Service de restauration avec diverses options alimentaires.</td>
+                        <td class="service-text "> 
+                            Service de restauration avec diverses options alimentaires.</td>
                 </tr>
-                <tr>
+                <tr data-service-id="service-2">
                     <td>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB9UlEQVR4nO3Wz6tMcRjH8RduCCldSkLpLu5SoqQkbCg7Gws73fwJ7uIu78a/YGEjxYaVDaGukV8LbKyUkPxKSpS48tWp52oac82ZMWfmTL7veuo05/t9ns/nfJ/zzCFTiq24ietxPZLsx1ukiA84ZIRYghn8CANXIlL8NhNras1aXArRP3EaS0P4dIu5dWrKdjxtaqPDbdYcwLtY8wK71Izj+BICH2LbX9Zuwb1Y+xUnmu6lRaJyxqJ9Fgqew6oS+1bgTNO+4nr5sIxsxp2mJzvVQ46p2FvkuNtGeOVG9uFNFHmJ3f+QaweeLXICqSojxfQ5hfkocBXjfcg7HrlSxHTUqsRI62idxbI+5i9yzUbuosblKoxM4kkk/YSjquMIPlbxsh/D50j4GBOqZyJqLRgpNPRttJ7HaoNjJc62GdFdsQE3IsF8vHzD4iS+hZYGNpXduBevY+Mr7DF8duJ5aHqPg2Xcf48Nc9ioPqzHtZYu+eMreg0utkyK4h2pG2MtGi+E9t88aBqtA/tQ65HUovV+883beBT/F6NiZDI0NzotrCuprL5sZECkfCL/24mkHqPXOh3JRnT3hGt/ImXJRuQTKUdurS5JubVKklurS1JurZLk1uqSlFurJLm1uiTl1hr11ko1j440aiAydYhbnW1kMvrBL/A6qXQvVsG5AAAAAElFTkSuQmCC">
                     </td>
                     <td class="service-text ">
                         Visite des Habitats avec un guide (gratuit)
                     </td>
-                    <td class="service-text">Venez profiter de l'expérience de nos guides pour en apprendre plus sur vos animaux préférés</td>
+                    <td class="service-text service-description">
+                        Venez profiter de l'expérience de nos guides pour en apprendre plus sur vos animaux préférés</td>
                     <td >
                 </tr>
-                <tr>
+                <tr data-service-id="service-3">
                     <td>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeklEQVR4nO2aO2uUQRSGH5SASvIDNG4diNHGzsb8AgO6NmIfDUhSiKVsZazFRiujsYgEAopt/A9JoaYzIKZQyU0x8bIycALLMPv5XWa+mS+eB04VOO97zs5lZ3NAURRFUUIzDrwBvgHdf8QusAxc5JDQyVF0v7hLw7leofiDuEZDOQase2jAR+AEiTIAtIF54K3s336FvARO5cg5DLzKyLMjWvOibTxEYQJYK/BJmsLycrpA3jXxUhtHgNkSS7koRXL/Ae6Jt+DMltzLRSmjYZoQlAnpdq/oPvAIOA8cD21ANIzWY9G2V8KlUMIDjj3/CThLPM4BG44zIcjB2LaE9oBR4jMmXnq9Ga/eeW6JPCAdHlrenoUQee/hS01d8S5EA3YSKCxvGK/e6TYstAG+6YbucEVqXwGpoQ1AVwC6BdAzAD0E0VsAvQZp4j1bEf0qjL4F0McQ+hpEr0H0GiT5a7AFLALbEkvASEL+ggqY4r848n2Vvx36Bixm/I73IgF/wQW2MxqwlXIDvlsCQwEasFky55CVx8wieWfdEin7b7GljAYslMx5xsrzgQC8tkSmS+YZkQPPLv6zDEaUYcbKZSZMvHPHElmpMJDQkgNvS2KhQvFHgVXL220CMAz8soRuEJ8py9NP4GQosaeW2A8ZgozFuHjo9fQkpGBLlqzdhJt1zef0LPspR/GbFbZSbtqOMZmDM2FaTuRB/DMouWcce74rni5TE5PA74zrrO4wxd+iZq7KkotdvPFwhUi0gLk+W6KOT32u4gMqyDT4vmNoyUfsOcbijHZSxe8GvhYvON4S9/lPik+qCZ1IxSfRhE7k4pNaCYqiKAoN5i/vncguhs4AuwAAAABJRU5ErkJggg==">
                     </td>
                     <td class="service-text"> 
                         Visite du Zoo en petit train
                     </td>
-                    <td class="service-text">Profitez d'un moment pour faire le tour de notre zoo en petit train</td>
+                    <td class="service-text">
+                        Profitez d'un moment pour faire le tour de notre zoo en petit train</td>
                 </tr>
             </tbody>
         </table>
         
         <!-- Button for modify Service (admin only) -->
-    <div class="container mt-5 mb-5" >
+    <div class="container mt-5 mb-5"  data-show="employee" >
         <div class="text-center">
-            <button type="button" class="btn form-submit" data-bs-toggle="modal" data-bs-target="#ModifyModal">
+            <button type="button" class="btn form-submit" data-bs-toggle="modal" data-bs-target="#ModifyModal" >
                 Modifier un service
             </button>
         </div>
@@ -119,11 +122,25 @@
     <div class="modal-dialog col-sm-6 col-md-6">
         <div class="modal-content">
             <div class="modal-header">
-            <h2 class="modal-title fs-5" id="exampleModalLabel">Modification service</h2>
+            <h2 class="modal-title fs-5" >Modification service</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            ...
+            <input type="hidden" name="service-id">
+            <div class="form-group mt-5">
+                <label for="service-name">Sélectionnez le service à modifier :</label>
+                <select class="form-control mt-3 form-service-name" name="service-name" required>
+                    <option value="" selected disabled hidden>Choisissez un service</option>
+                    <option value="service-1">Restauration</option>
+                    <option value="service-2">Visite des Habitats avec un guide (gratuit)</option>
+                    <option value="service-3">Visite du Zoo en petit train</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group mt-5">
+                <label for="service-description">Description du service :</label>
+                <textarea class="form-control mt-3 form-service-description" name="service-description" rows="5" required></textarea>
+            </div>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>

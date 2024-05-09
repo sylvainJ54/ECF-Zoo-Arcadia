@@ -34,10 +34,13 @@
                             <li class="nav-item">
                                 <a class="nav-link  fs-3" href="/">Accueil</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-show="disconnected">
                                 <a class="nav-link fs-3" href="/Signin" >Connexion</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-show="connected">
+                                <button class="nav-link fs-3" id="signoutBtn" >Déconnexion</button>
+                            </li>
+                            <li class="nav-item" data-show="admin">
                                 <a class="nav-link fs-3" href="/Signup" >Inscription</a>
                             </li>
                         </ul>
@@ -70,8 +73,9 @@
                 </div>
             </div>
         </footer>
+    <script src = "./assets/js/script.js"></script>
     <script type="module" src="/Router/router.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="assets/script/login.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+
 </body>
 </html>
