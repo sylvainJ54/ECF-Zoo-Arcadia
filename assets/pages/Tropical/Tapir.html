@@ -1,0 +1,50 @@
+
+<link rel="stylesheet" href="./assets/css/habitatTropicalStyle.css">
+
+<section id="espaceVeterinaire">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img src="./assets/images/habitats/tropical/animaux/tapir.webp" class="rounded mx-auto d-block habitat__image rounded-4" alt="Image d'un tapir">
+                    <h2 class="mt-5 fs-1 habitat__title">Utari</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulaire pour saisir les informations sur l'animal -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="formulaireVeterinaire">
+                    <div class="mb-3">
+                        <label for="etatAnimal" class="form-label">État de l'animal :</label>
+                        <input type="text" class="form-control" id="etatAnimal" name="etatAnimal" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nourritureProposee" class="form-label">Nourriture proposée :</label>
+                        <input type="text" class="form-control" id="nourritureProposee" name="nourritureProposee" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="grammageNourriture" class="form-label">Grammage de la nourriture :</label>
+                        <input type="number" class="form-control" id="grammageNourriture" name="grammageNourriture" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="datePassage" class="form-label">Date de passage :</label>
+                        <input type="date" class="form-control" id="datePassage" name="datePassage" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="detailEtatAnimal" class="form-label">Détail de l'état de l'animal :</label>
+                        <textarea class="form-control" id="detailEtatAnimal" name="detailEtatAnimal"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn  mb-5" data-show="employee">Enregistrer</button>
+                    <a class="nav-link  habitat__link fs-3  mb-5 fw-medium" href="/Tropical">Retour</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,6 +1,4 @@
 
-
-
 .habitat__title{
 	font-size: 1.5em;
 	font-weight: 700;
@@ -59,8 +57,7 @@
 	margin-bottom: 40px;
 	margin-left: auto;
     margin-right: auto;
-	border-color:#D10000;
-	border-radius: 0% 0% 15% 15% / 0% 0% 15% 15%;
+	border: none;
 }
 
 @media (min-width: 320px) and (max-width: 425px){
@@ -118,16 +115,9 @@
 	font-size: 1.5rem;
 }
 
-.btn {
+.habitat__link {
 	font-size: 20px;
-	color:white;
-	background-color:#00CED1;
-	margin-top: 20px;
-		&:hover {
-			background-color: #D10000;
-			transition: 0.7s;
-			color:white;
-	}
+	color: #00CED1;
 }
 
 @media (min-width: 320px) and (max-width: 425px){
@@ -139,11 +129,6 @@
 	.habitat__card-text {
 		font-size: 16px;
 	}
-	.btn {
-		font-size: 16px;
-		margin-top: 10px;
-	}
-	
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -155,8 +140,41 @@
 	.habitat__card-text {
 		font-size: 1.2rem;
 	}
-	.btn {
-		font-size: 18px;
-		margin-top: 20px;
-	}
+
+}
+
+/* Détail de l'animal */
+#detailAnimal {
+    margin-top: 50px;
+}
+
+#details {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .habitat__title {
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    
+    .habitat__image {
+        margin-top: 30px;
+    }
+
+    .habitat__paragraph {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    #formulaireVeterinaire {
+        margin-top: 30px;
+    }
+
+    #details {
+        padding: 10px;
+    }
 }

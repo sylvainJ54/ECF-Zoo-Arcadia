@@ -127,6 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const serviceNameSelect = document.querySelector('.form-service-name');
     const serviceDescriptionTextarea = document.querySelector('.form-service-description');
 
+    console.log (modifyModal)
+    console.log (serviceNameSelect)
+    console.log (serviceDescriptionTextarea)
+
     // Get the table rows with service data
     const serviceRows = document.querySelectorAll('tr[data-service-id]');
     
