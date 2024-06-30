@@ -12,7 +12,7 @@ function checkCredentials(){
         const token = "lkjsdngfljsqdnglkjsdbglkjqskjgkfjgbqslkfdgbskldfgdfgsdgf";
         setToken(token);
         //placer ce token en cookie
-
+        //pour les tests changer admin par employee ou veterinarian
         setCookie(RoleCookieName, "admin", 7);
 
         window.location.replace("/");
