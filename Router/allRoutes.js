@@ -36,7 +36,7 @@ export const allRoutes = [
     new Route("/Shiva", "Shiva", "./assets/pages/Tropical/Tiger.html", []),
 
     new Route("/Contact", "Contact", "./assets/pages/auth/contact.html", []),
-    new Route("/Signin", "Connexion", "./assets/pages/auth/signin.html", ["disconnected"],"./assets/js/auth/signin.js"),
+    new Route("/Signin", "Connexion", "./assets/pages/auth/signin.html", [],"./assets/js/auth/signin.js"),
     new Route("/Signup", "Inscrption", "./assets/pages/auth/signup.html", ["admin"], "./assets/js/auth/signup.js")];
 
 //The title is displayed like this: Route.title - websitename

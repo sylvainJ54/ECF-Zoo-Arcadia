@@ -1,5 +1,5 @@
 
-// const tokenCookieName = "accesstoken";
+
 const signoutBtn = document.getElementById("signoutBtn"); 
 const RoleCookieName = "Role";
 
@@ -59,7 +59,7 @@ function isConnected(){
 }
 
 
-// afficher et masquer les éléments en fonction du role
+// show and hide elements based on role
 
 function showAndHideElementsForRoles(){
     const userConnected = isConnected();
