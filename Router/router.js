@@ -4,16 +4,16 @@ import { allRoutes, websiteName } from "./allRoutes.js";
 // Creating a route for the 404 page (page not found)
 const route404 = new Route("404", "Page introuvable", "/assets/pages/404.html", []);
 
-// Fonction pour récupérer la route correspondant à une URL donnée
+// Function to retrieve the route corresponding to a given URL
 const getRouteByUrl = (url) => {
     let currentRoute = null;
-  // Parcours de toutes les routes pour trouver la correspondance
+  // Browse all routes to find the connection
 allRoutes.forEach((element) => {
     if (element.url == url) {
         currentRoute = element;
     }
 });
-  // Si aucune correspondance n'est trouvée, on retourne la route 404
+  // If no match is found, return route 404
 if (currentRoute != null) {
     return currentRoute;
 } else {
@@ -21,12 +21,12 @@ if (currentRoute != null) {
 }
 };
 
-// Fonction pour charger le contenu de la page
+// Function to load page content
 const LoadContentPage = async () => {
     const path = window.location.pathname;
-  // Récupération de l'URL actuelle
+  //Retrieving the current URL
     const actualRoute = getRouteByUrl(path);
-  //Vérifier les droits d'accès à la page
+  //Check page access rights
   const allRolesArray = actualRoute.authorize;
   if(allRolesArray.length > 0){
     if(allRolesArray.includes("disconnected")){
@@ -41,19 +41,19 @@ const LoadContentPage = async () => {
       }
     }
   };
-  // Récupération du contenu HTML de la route
+  // Retrieving HTML content from the route
     const html = await fetch(actualRoute.pathHtml).then((data) => data.text());
-  // Ajout du contenu HTML à l'élément avec l'ID "main-page"
+  // Adding HTML content to element with id "main-page"
     document.getElementById("main-page").innerHTML = html;
 
-  // Ajout du contenu JavaScript
+  // Adding JavaScript content
 if (actualRoute.pathJS != "") {
-    // Création d'une balise script
+    // Creating a script tag
     const scriptTag = document.createElement("script");
     scriptTag.setAttribute("type", "text/javascript");
     scriptTag.setAttribute("src", actualRoute.pathJS);
 
-    // Ajout de la balise script au corps du document
+    // Adding the script tag to the body of the document
     document.querySelector("body").appendChild(scriptTag);
 }
 
@@ -66,7 +66,6 @@ document.title = actualRoute.title + " - " + websiteName;
 
 // Fonction pour gérer les événements de routage (clic sur les liens)
 const routeEvent = (event) => {
-    event = event || window.event;
     event.preventDefault();
   // Mise à jour de l'URL dans l'historique du navigateur
     window.history.pushState({}, "", event.target.href);

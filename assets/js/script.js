@@ -39,7 +39,7 @@ function getCookie(name) {
     let nameEQ = name + "=";
     let ca = document.cookie.split(';');
     for(let c of ca) {
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        while (c.startsWith(' ')) c = c.substring(1,c.length);
         if (c.startsWith(nameEQ)) return c.substring(nameEQ.length);
     }
     return null;

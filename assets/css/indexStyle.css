@@ -22,7 +22,11 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -101,11 +105,6 @@ a {
         &:hover{
             background-color: #08f24a;
     }
-}
-
-.welcome-image{
-    width: 325px;
-    height: auto;
 }
 
 .paragraphe__title{
